@@ -20,10 +20,10 @@ module.exports = {
 			footer: "\n- User ID: %1\n- Nhóm: %2\n- ID nhóm: %3\n- Thời gian: %4"
 		},
 		en: {
-			title: "══════☯𝗕𝗼𝘁~𝗶𝗻𝗳𝗼☯══════",
-			added: "\n✅\nEvent: 𝗯𝗼𝘁 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗮𝗱𝗱𝗲𝗱 𝘁𝗼 𝗮 𝗻𝗲𝘄 𝗴𝗿𝗼𝘂𝗽\n- 𝗔𝗱𝗱𝗲𝗱 𝗯𝘆:☛ %1",
-			kicked: "\n❌\nEvent: 𝗯𝗼𝘁 𝗵𝗮𝘀 𝗯𝗲𝗲𝗻 𝗸𝗶𝗰𝗸𝗲𝗱\n- 𝗞𝗶𝗰𝗸𝗲𝗱 𝗯𝘆:☛ %1",
-			footer: "\n- 𝐔𝐬𝐞𝐫 𝐈𝐃: %1\n- 𝐆𝐫𝐨𝐮𝐩: %2\n- 𝐆𝐫𝐨𝐮𝐩 𝐈𝐃: %3\n- 𝐓𝐢𝐦𝐞: %4"
+			title: "====== Bot logs ======",
+			added: "\n✅\nEvent: bot has been added to a new group\n- Added by: %1",
+			kicked: "\n❌\nEvent: bot has been kicked\n- Kicked by: %1",
+			footer: "\n- User ID: %1\n- Group: %2\n- Group ID: %3\n- Time: %4"
 		}
 	},
 
