@@ -41,13 +41,13 @@ module.exports = {
 			missingMessage: "Please enter the message you want to send to admin",
 			sendByGroup: "\n- Sent from group: %1\n- Thread ID: %2",
 			sendByUser: "\n- Sent from user",
-			content: "\n\nContent:\n─────────────────\n%1\n─────────────────\nReply this message to send message to user",
+			content: "\n\nContent:\n═════════════════\n%1\n═════════════════\n𝐑𝐞𝐩𝐥𝐲 𝐭𝐡𝐢𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 𝐬𝐞𝐧𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 𝐮𝐬𝐞𝐫",
 			success: "Sent your message to %1 admin successfully!\n%2",
 			failed: "An error occurred while sending your message to %1 admin\n%2\nCheck console for more details",
-			reply: "📍 Reply from admin %1:\n─────────────────\n%2\n─────────────────\nReply this message to continue send message to admin",
+			reply: "📍~𝐑𝐞𝐩𝐥𝐲 𝐟𝐫𝐨𝐦 𝐚𝐝𝐦𝐢𝐧~♻️ %1:\n═════════════════\n%2\n═════════════════\n𝗥𝗲𝗽𝗹𝘆 𝘁𝗵𝗶𝘀 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝘁𝗼 𝗰𝗼𝗻𝘁𝗶𝗻𝘂𝗲 𝘀𝗲𝗻𝗱 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝘁𝗼 𝗮𝗱𝗺𝗶𝗻",
 			replySuccess: "Sent your reply to admin successfully!",
-			feedback: "📝 Feedback from user %1:\n- User ID: %2%3\n\nContent:\n─────────────────\n%4\n─────────────────\nReply this message to send message to user",
-			replyUserSuccess: "Sent your reply to user successfully!",
+			feedback: "📬 {𝐅𝐞𝐞𝐝𝐛𝐚𝐜𝐤 𝐟𝐫𝐨𝐦 𝐮𝐬𝐞𝐫} %1:\n- 𝐔𝐬𝐞𝐫 𝐈𝐃: %2%3\n\nContent:\n═════════════════\n%4\n═════════════════\n𝐑𝐞𝐩𝐥𝐲 𝐭𝐡𝐢𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 𝐬𝐞𝐧𝐝 𝐦𝐞𝐬𝐬𝐚𝐠𝐞 𝐭𝐨 𝐮𝐬𝐞𝐫",
+			replyUserSuccess: "𝗦𝗲𝗻𝘁 𝘆𝗼𝘂𝗿 𝗿𝗲𝗽𝗹𝘆 𝘁𝗼 𝘂𝘀𝗲𝗿 𝘀𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆!✔️✨",
 			noAdmin: "Bot has no admin at the moment"
 		}
 	},
@@ -60,9 +60,9 @@ module.exports = {
 		if (config.adminBot.length == 0)
 			return message.reply(getLang("noAdmin"));
 		const senderName = await usersData.getName(senderID);
-		const msg = "==📨️ CALL ADMIN 📨️=="
-			+ `\n- User Name: ${senderName}`
-			+ `\n- User ID: ${senderID}`
+		const msg = "==☯📨𝗖𝗔𝗟𝗟~𝗔𝗗𝗠𝗜𝗡📨☯=="
+			+ `\n- 𝐔𝐬𝐞𝐫 𝐍𝐚𝐦𝐞: ${senderName}`
+			+ `\n- 𝐔𝐬𝐞𝐫 𝐈𝐃: ${senderID}`
 			+ (isGroup ? getLang("sendByGroup", (await threadsData.get(threadID)).threadName, threadID) : getLang("sendByUser"));
 
 		const formMessage = {
